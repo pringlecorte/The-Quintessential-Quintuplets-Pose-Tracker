@@ -30,8 +30,7 @@ pip install opencv-python "mediapipe<=0.10.14"
 Afterwards, you just wanna skedaddle to the folder and open the file
 
 ```bash
-cd %USERPROFILE%\The-Quintessential-Quintuplets-Pose-Tracker
-"The Quintessential Quintuplets Pose Tracker.py"
+cd %USERPROFILE%\The-Quintessential-Quintuplets-Pose-Tracker && python "The Quintessential Quintuplets Pose Tracker.py"
 ```
 
 P.S. Press Q to stop the code
