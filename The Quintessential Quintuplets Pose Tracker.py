@@ -16,6 +16,53 @@ drawstyle = mp.solutions.drawing_styles
 
 RefreshRate = pygame.time.Clock()
 
+
+def distance(p1, p2, p3, p4):
+
+    ax = p1.x
+    ay = p1.y
+    az = p1.z
+    bx = p2.x
+    by = p2.y
+    bz = p2.z
+
+
+    #reference points
+    cx = p3.x
+    cy = p3.y
+    cz = p3.z
+    dx = p4.x
+    dy = p4.y
+    dz = p4.z
+
+    return round(math.sqrt((ax - bx)**2+(ay - by)**2+(az-bz)**2) / math.sqrt((cx-dx)**2 + (cy-dy)**2 + (cz-dz)**2), 2)
+
+def angle_finger(p1, p2):
+
+    ax = p1.x
+    ay = p1.y
+
+    bx = p2.x
+    by = p2.y
+    frameH, frameW, _ = frame.shape
+    dx = ax - bx
+    dy = by - ay
+
+    finger_angle = math.degrees(math.atan2(dy, dx))
+    wrist_angle = abs(finger_angle - 90)
+
+    if wrist_angle>180:
+        wrist_angle=360-wrist_angle
+
+    return wrist_angle
+
+
+
+
+
+
+
+pygame.init()
 while camera.isOpened():
     RefreshRate.tick(15)
     success, frame = camera.read()
@@ -33,10 +80,13 @@ while camera.isOpened():
         for hand_landmarks in hand_results.multi_hand_landmarks:
             for face_landmarks in face_results.multi_face_landmarks:
 
-                draw.draw_landmarks(frame,hand_landmarks, mp_hands.HAND_CONNECTIONS, drawstyle.get_default_hand_landmarks_style(), drawstyle.get_default_hand_connections_style())
-                draw.draw_landmarks(image=frame,landmark_list=face_landmarks, connections=mp_face.FACEMESH_TESSELATION, landmark_drawing_spec=None, connection_drawing_spec=drawstyle.get_default_face_mesh_tesselation_style())
+                #draw.draw_landmarks(frame,hand_landmarks, mp_hands.HAND_CONNECTIONS, drawstyle.get_default_hand_landmarks_style(), drawstyle.get_default_hand_connections_style())
+                #draw.draw_landmarks(image=frame,landmark_list=face_landmarks, connections=mp_face.FACEMESH_TESSELATION, landmark_drawing_spec=None, connection_drawing_spec=drawstyle.get_default_face_mesh_tesselation_style())
                             
+
                 mouth_left = face_landmarks.landmark[61]
+                left_y_cheek = face_landmarks.landmark[212]
+                mouth_top_right = face_landmarks.landmark[267]
                 mouth_right = face_landmarks.landmark[291]
                 mouth_top = face_landmarks.landmark[13]
                 mouth_down = face_landmarks.landmark[14]
@@ -46,6 +96,7 @@ while camera.isOpened():
                 forehead = face_landmarks.landmark[10]
                 chin = face_landmarks.landmark[152]
 
+                
                 #print(f"{cheek_left.x - cheek_right.x} {cheek_right.x:.2f}  {mouth_down.y:.2f}")
                 #print(f"Upper Lip{mouth_top.x:.2f} {mouth_top.y:.2f} Lower Lip {mouth_down.x:.2f} {mouth_down.y:.2f}")
                 #print(f"Right Corner {mouth_right.x:.2f} {mouth_right.y:.2f} Left Corner {mouth_left.x:.2f} {mouth_left.y:.2f}")
@@ -55,59 +106,66 @@ while camera.isOpened():
                 thumb = hand_landmarks.landmark[4]
                 wrist = hand_landmarks.landmark[0]
                 ring = hand_landmarks.landmark[16]
-    
-                distance1 = math.sqrt(((thumb.x - index.x)**2)+(thumb.y-index.y)**2)
+                index_base = hand_landmarks.landmark[5]
 
-                #Miku's
-                sidea1 = ((wrist.x - 0.5)**2)+(wrist.y-0)**2
-                sidec1 = ((index.x - wrist.x)**2)+(index.y - wrist.y)**2
-                sideb1 = ((index.x - 0.5)**2)+(index.y - 0)**2
+                
 
-                #Nino's
-                sidea2 = ((forehead.x - chin.x)**2)+(forehead.y-0)**2
-                sideb2 = (chin.y)**2
-                sidec2 = ((chin.x - forehead.x)**2)+(chin.y - forehead.y)**2
+              
 
+               
+                
 
-                #angle index wrist line
-                angleiwl = (sidea1 + sidec1 - sideb1)/(2*sidea1*sidec1)
-                #print(f"{angleiwl}")
-                #angle forehead chin line
-                anglefcl = (sidea2 + sidec2 - sideb2)/(2*sidea2*sidec2)
-                #print(f"{round(ring.x) - round(mouth_right.x)}")
+                #print(f"{angle_finger(forehead.x, forehead.y, chin.x, chin.y,chin.x, 0)}")
+                #print(f"{distance(index.x, lowerright_jaw.x, index.y, lowerright_jaw.y)}")
+                #print(f"{angle_finger(index.x, index.y, wrist.x, wrist.y, wrist.x, 0)}")
+                #print(f"{angle_finger(index.x, index.y, index_base.x, index_base.y, thumb.x, thumb.y)}")
+            
+
+            
+
+                print(f"{angle_finger(index, wrist)}")
 
                 print("I'm detecting...")
 
-                if (((mouth_top.y - mouth_down.y))<=(0.10)) and (0.10 <= distance1 <= 0.20) and (2.30 <= angleiwl <= 2.50):
-                    print("MIKU NAKANO", end='', flush=True)
                 
-                elif ((0.10<= distance1<=0.25) or ((0.45<=mouth_top.y<=0.55) and (0.55<=mouth_down.y<=0.65))) and (2.30 <= angleiwl <= 2.65):
-                    print("Trying to do a Miku Pose?", end='', flush=True)
+                if 7 <= angle_finger(forehead, chin) and 0 <= distance(index, lowerright_jaw, forehead, chin) <= 0.2 and 5 <=angle_finger(index, wrist) <= 15 and  angle_finger(index, index_base) < 10:
+                    print("NINO")
+                                    
+                elif 3 <= angle_finger(forehead, chin) :
+                        print("Trying to do a Nino Pose?")
+
                 
-               
-
-                elif (abs(round(ring.x, 3) - round(mouth_right.x,3)) <= 0.03 and ((abs((mouth_top.y - mouth_down.y))>=0.02))):
-                    print("YOTSUBA", end='', flush=True)
+                elif 0.13 <= distance(mouth_down, mouth_top, forehead, chin) and (0.35 <= distance(thumb, index, index, wrist) <= 0.45) and (0 <= angle_finger(index, wrist) <= 10):
+                    print("MIKU NAKANO")
                 
-                elif (0 <= abs(round(ring.x, 3) - round(mouth_right.x,3)) <= 0.09) and not(-8 <= anglefcl <= -5) :
-                    print("Trying to do a Yotsuba Pose?", end='', flush=True)
+                elif (0.35 <= distance(thumb, index, index, wrist) ) and angle_finger(index, wrist) <= 20:
+                    print("Trying to do a Miku Pose?")
+                               
 
-                elif (-8 <= anglefcl <= -6) and (0 <= abs(round(index.x, 3) - round(lowerright_jaw.x, 3)) <= 0.05):
-                    print("NINO", end='', flush=True)
-                    
+                elif distance(ring.x ,mouth_right.x, ring.y, mouth_right.y) <= 0.03 and 0.015 <= distance(mouth_top.x, mouth_down.x, mouth_top.y, mouth_down.y) <= 0.03 and 0.1 <= distance(mouth_top_right.x, left_y_cheek.x, mouth_top_right.y, left_y_cheek.y) <= 0.15 and 60 <= angle_finger(ring.x, ring.y, wrist.x, wrist.y,wrist.x, 0) <= 65:
+                    print("YOTSUBA")
+                
+                elif distance(ring.x ,mouth_right.x, ring.y, mouth_right.y) <= 0.1 :
+                    print("Trying to do a Yotsuba Pose?")
 
-                elif (-9 <= anglefcl <= -5):
-                    print("Trying to do a Nino Pose?", end='', flush=True)
-                #print(f"{abs(round(ring.x, 3) - round(mouth_right.x,3))}")
 
-                #print(f"{abs(round(index.x, 3) - round(lowerright_jaw.x, 3))}")
+
+                
+                #print(f"{abs(ring.x, 3) - mouth_right.x,3))}")
+
+                #print(f"{abs(index.x, 3) - lowerright_jaw.x, 3))}")
                 print(2*"")
+               
     
 
                 
     cv2.imshow("The Quintessential Quintuplets Pose Project", frame)
-
+    
+    #pygame.draw.line(screen, (255,255,255), (wrist.x*100, wrist.y*100), (wrist.x*100, 0))
     if cv2.waitKey(1) & 0XFF == ord('q'):
         break
+    
+    
+
 camera.release()
 cv2.destroyAllWindows()
