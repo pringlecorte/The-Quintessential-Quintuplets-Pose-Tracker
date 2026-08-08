@@ -4,6 +4,7 @@ For The Quintessential Quintuplets fans, by The Quintessential Quintuplet fan. T
 For reference, these are the poses
 <img width="5261" height="2959" alt="1140624" src="https://github.com/user-attachments/assets/ea1b6cc3-1c0b-4f07-af8e-73f0b01c7afd" />
 
+The Quintessential Quintuplets is not one of your usual anime. Its about how quintessential these quintuplets are compared to the rest of the anime world. Trust me guys its peak its not your usual harem. Theres a guy but he's their tutor and I gotta admit, I wish I was him but I dont think I'll be able to handle the sheer stress of studying Sengoku Period (sorry Miku) since I'm always coding anyways
 
 This was created via python, Google's MediaPipe framework to track movements, OpenCV for the camera and idk but ye just check the file lil bro
 
