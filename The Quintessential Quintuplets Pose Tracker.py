@@ -270,7 +270,7 @@ while camera.isOpened():
                 
                 print()
                 print("I'm detecting...")
-                frame[50:250, 50:250] = miku_image
+                
 
 
                 if distance(pinky, mouth_down, forehead, mouth_down) <= 0.35 and 0.03 <= distance(mouth_top, mouth_down, forehead, chin) and angle_finger(pinky, wrist) <= 20 and 150 <= angle_finger(ring, ring_mid) <= 170:
@@ -280,6 +280,7 @@ while camera.isOpened():
 
                 if 0.015 <= distance(mouth_down, mouth_top, forehead, chin) and (0.35 <= distance(thumb, index, index, wrist) <= 0.45) and angle_finger(index, wrist) <= 20 and not(160 <= angle_finger(ring, ring_mid) <= 170) :
                     print("MIKU NAKANO")
+                    frame[50:250, 50:250] = miku_image
                     
                                 
                 elif (0.35 <= distance(thumb, index, index, wrist) ) and angle_finger(index, wrist) <= 30 and distance(index, mouth_top, wrist, forehead) <= 0.5 and not(160 <= angle_finger(ring, ring_mid) <= 170) :
