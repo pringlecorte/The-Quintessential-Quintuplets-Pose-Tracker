@@ -4,9 +4,13 @@ import subprocess
 import sys
 import importlib
 import base64
-import numpy as np
+
 
 #print(f"{sys.executable}")
+
+if sys.version_info.major != 3 or sys.version_info.minor != 12:
+    print(f"Sorry lil bro, your Python version {sys.version_info.major}.{sys.version_info.minor} cannot support the needed modules. Please install Python 3.12 until I patch for the current Python version you are using. Might as well say goodbye to The Quintessential Quintuplets 💔💔")
+    sys.exit(1)
 
 
 def pip_install(module, package):
@@ -63,6 +67,8 @@ print(f"MediaPipe Version {mediapipe.__version__}")
 import pygame
 import cv2 
 import mediapipe as mp
+import numpy as np
+
 
 def listcameras(max = 10):
     available = []
@@ -89,6 +95,8 @@ print("")
 
 
 if permission.lower() == 'y':
+    print("List of Cameras:")
+    print("----------------------")
     for i in listcameras():
         print(i,end='')
         if i == 0:
@@ -257,12 +265,17 @@ while camera.isOpened():
                 #print(f"{angle_finger(ring, wrist)}")
 
             
-                print(f"{distance(mouth_down, mouth_top, forehead, chin)}")
-                print(f"{distance(thumb, index, index, wrist)}")
-                print(f"{angle_finger(index, wrist)}")
+                #print(f"{distance(mouth_down, mouth_top, forehead, chin)}")
+                #print(f"{distance(thumb, index, index, wrist)}")
+                #print(f"{angle_finger(index, wrist)}")
 
                 #print(f"{distance(pinky, mouth_down, forehead, mouth_down)}")
                 #print(f"{angle_finger(ring, ring_mid)}")
+                #print(f"{distance(mouth_top, mouth_down, forehead, chin)}")
+
+                print(f"{angle_finger(forehead, chin)}")
+                print(f"{distance(index, lowerright_jaw, forehead, chin)}")
+                print(f"{angle_finger(index, wrist)}")
 
             
 
@@ -273,7 +286,7 @@ while camera.isOpened():
                 
 
 
-                if distance(pinky, mouth_down, forehead, mouth_down) <= 0.35 and 0.03 <= distance(mouth_top, mouth_down, forehead, chin) and angle_finger(pinky, wrist) <= 20 and 150 <= angle_finger(ring, ring_mid) <= 170:
+                if distance(pinky, mouth_down, forehead, mouth_down) <= 0.35 and 0.01 <= distance(mouth_top, mouth_down, forehead, chin)  and 150 <= angle_finger(ring, ring_mid) :
                     print("ITSUKI")
                     frame[50:250, 50:250] = itsuki_image
 
@@ -283,7 +296,7 @@ while camera.isOpened():
                     frame[50:250, 50:250] = miku_image
                     
                                 
-                elif (0.35 <= distance(thumb, index, index, wrist) ) and angle_finger(index, wrist) <= 30 and distance(index, mouth_top, wrist, forehead) <= 0.5 and not(160 <= angle_finger(ring, ring_mid) <= 170) :
+                elif (0.35 <= distance(thumb, index, index, wrist) ) and angle_finger(index, wrist) <= 30 and distance(index, mouth_top, wrist, forehead) <= 0.5 and not(160 <= angle_finger(ring, ring_mid) <= 170) and not(3<=angle_finger(forehead,chin)):
                     print("Trying to do a Miku Pose?")
 
                 elif distance(ring, mouth_right, ring, wrist) <= 0.3 and 0.05 <= distance(mouth_top, mouth_down, ring, wrist)  and 0.1 <= distance(mouth_top_right, left_y_cheek, ring, wrist) <= 0.5 and 55 <= angle_finger(ring, wrist):
@@ -301,6 +314,8 @@ while camera.isOpened():
                                     
                 elif 3 <= angle_finger(forehead, chin) :
                     print("Trying to do a Nino Pose?")
+
+                
 
                 
 
