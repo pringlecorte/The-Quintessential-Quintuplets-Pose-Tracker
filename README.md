@@ -9,7 +9,7 @@ This was created via python, Google's MediaPipe framework to track movements, Op
 
 Currently not yet finished (I am still yet to finish Itsuki's for the alpha release)
 
-
+For newcomers on GitHub, welcome aboard. To download the file, just hover on top of the screen and you'll see smth like README.md and a file with a ridiculously long name ending with .py. Install that and you should be good to go.
 
 By default, the file automatically downloads the dependencies and modules it needs. If it fails to do so, just follow the instructions it prints. (A major problem is when you try to install mediapipe but something is blocking Python from using subprocess to install the module. If that happens, follow the instruction it prints
 
