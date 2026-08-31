@@ -64,6 +64,15 @@ to whoever is reading this just hit the download button dawg it aint that entert
   - Idekkkk
   - Maybe to avoid copyright issues, you could do a bring your own lunch typa shi, meaning you can drag your own songs into a folder and the file is gonna recognize it
 
+  - NEW FEATURES IM GONNA ADD (9:34PM)
+      - karaoke?? idk, with the lyrics maybe i could idk yet
+      - i know i mentioned this before but about the edit mode, u can apply filters, change bg, change positions, type shi type shi
+      - a whole menu that you can interact with your fingers!! sorta like hud but in your laptop!!
+      - random addition poses that i wont announce
+      - better and much more lively indicators
+      - a clock cuz clocks are cool and important
+      - a game maybe pseudo 3d but idk how it would exactly match the content of the pose tracker
+
 
 As for you guys with potato laptops, don't worry. Imma seperate the core pose tracker and the full package into 2 files
 P.S. Press Q to stop the code
