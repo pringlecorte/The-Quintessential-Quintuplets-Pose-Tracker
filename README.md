@@ -24,5 +24,9 @@ Oh ye, if you guys ever wonder why the hell a python file is 200+ kb with barely
 
 I lowk don't know what to put cuz I wanna make this description longer but I have no idea what to put here. Just download the file lil bro
 
+CURRENT BUILD: ALPHA 0.4.2
+
+Will become stable build once I fix the thresholds and add Ichika Nakano to the mix
+
 P.S. Press Q to stop the code
 
