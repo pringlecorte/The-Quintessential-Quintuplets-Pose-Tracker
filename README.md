@@ -56,6 +56,13 @@ to whoever is reading this just hit the download button dawg it aint that entert
   - Edit mode (idk if I'll make it a set, static, stationary edit by a predefined function)
   - Jukebox??
   - Maybe an actual .exe file??
+  - LYRICS to the songs
+  - Changeable songs
+  - transitions
+  - A photo editing tool??
+  - Filters??
+  - Idekkkk
+
 
 As for you guys with potato laptops, don't worry. Imma seperate the core pose tracker and the full package into 2 files
 P.S. Press Q to stop the code
