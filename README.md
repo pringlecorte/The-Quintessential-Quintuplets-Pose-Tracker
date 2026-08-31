@@ -42,5 +42,7 @@ YOO SO I MANAGED TO ADD DAY 1 BY RED VELVET AND GOTOUBUN NO KIMOCHI WITHOUT IT S
 
 DISREGARD MY EARLIER MESSAGE ON 200 KB, ITS NOW 4 MB BUT CONSIDERING 2 AUDIO FILES AND 5 IMAGES, THATS INSANE BRO
 
+Because of the songs, I decided to make this a full on The Quintessential Quintuplets effects so bear with me, I'm planning to add shi like lyrics, transitions, pose confidence, complete with moving background or smth like that IDK OLDER ME WILL DECIDE BUT I PROMISE ITLL BE PEAK
+
 P.S. Press Q to stop the code
 
