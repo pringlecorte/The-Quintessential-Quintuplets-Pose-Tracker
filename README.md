@@ -69,6 +69,7 @@ As for you guys with potato laptops, don't worry. Imma seperate the core pose tr
 P.S. Press Q to stop the code
 
 Me the goat who's about to save yall's laptops by trimming down the huge 4MB python to file to maybe around 60 kb
+
 <img width="163" height="148" alt="download" src="https://github.com/user-attachments/assets/90d5c777-5d88-4c2e-80ae-29838758de1f" />
 
 
