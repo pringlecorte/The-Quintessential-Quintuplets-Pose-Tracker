@@ -48,5 +48,15 @@ Lowk imma try to learn how to remove the bg so that there will be cool effects l
 
 to whoever is reading this just hit the download button dawg it aint that entertaining to read this 💔💔💔
 
+**FUTURE PLANS**
+  - Photoshoot session
+  - More characters
+  - Moving/animated backgrounds
+  - DYNAMIC Backgrounds
+  - Edit mode (idk if I'll make it a set, static, stationary edit by a predefined function)
+  - Jukebox??
+  - Maybe an actual .exe file??
+
+As for you guys with potato laptops, don't worry. Imma seperate the core pose tracker and the full package into 2 files
 P.S. Press Q to stop the code
 
