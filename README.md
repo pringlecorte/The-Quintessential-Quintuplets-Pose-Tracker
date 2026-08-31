@@ -44,5 +44,9 @@ DISREGARD MY EARLIER MESSAGE ON 200 KB, ITS NOW 4 MB BUT CONSIDERING 2 AUDIO FIL
 
 Because of the songs, I decided to make this a full on The Quintessential Quintuplets effects so bear with me, I'm planning to add shi like lyrics, transitions, pose confidence, complete with moving background or smth like that IDK OLDER ME WILL DECIDE BUT I PROMISE ITLL BE PEAK
 
+Lowk imma try to learn how to remove the bg so that there will be cool effects like you see in edits THIS FINNA BE PEAK 
+
+to whoever is reading this just hit the download button dawg it aint that entertaining to read this 💔💔💔
+
 P.S. Press Q to stop the code
 
