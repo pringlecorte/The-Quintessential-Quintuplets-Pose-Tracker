@@ -72,6 +72,7 @@ to whoever is reading this just hit the download button dawg it aint that entert
       - better and much more lively indicators
       - a clock cuz clocks are cool and important
       - a game maybe pseudo 3d but idk how it would exactly match the content of the pose tracker
+  - Lowk imma try to add a stroll in the park with ur favorite nakano sister in 3d but idk about the models of the sisters, don't expect me to go full wizard and if i were u just expect a huge image of miku staring at your soul as you larp about knowing sengoku period history while u walk T-T
 
 
 As for you guys with potato laptops, don't worry. Imma seperate the core pose tracker and the full package into 2 files
