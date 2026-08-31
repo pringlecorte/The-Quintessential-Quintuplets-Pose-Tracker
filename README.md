@@ -59,6 +59,7 @@ to whoever is reading this just hit the download button dawg it aint that entert
   - transitions
   - A photo editing tool??
   - Filters??
+  - FULL BODY MODE -- I JUST FOUND OUT MEDIAPIPE CAN DETECT YOUR WHOLE BODY
   - Idekkkk
 
 
