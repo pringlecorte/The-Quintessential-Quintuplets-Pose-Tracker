@@ -36,11 +36,9 @@ Will become stable build once I fix the thresholds and add Ichika Nakano to the 
   - The Quintessential Quintuplets cuz they're a feature yo
   - Google's Mediapipe to map out your beautiful face!!
 
-HAHAHA LETS GO I MANAGED TO TURN THE FLAC FILE INTO OPUS AND IT WENT FROM LIKE 30 MB OR SMTH TO JUST 1.19 MB MY CLIPBOARD IS CRYING TEARS RN BUT TEARS OF JOY
-
 YOO SO I MANAGED TO ADD DAY 1 BY RED VELVET AND GOTOUBUN NO KIMOCHI WITHOUT IT SOUNDING LIKE DOGWATER JUST SWITCH THE VARIABLES AND YOU SHOULD BE GOOD 
 
-DISREGARD MY EARLIER MESSAGE ON 200 KB, ITS NOW 4 MB BUT CONSIDERING 2 AUDIO FILES AND 5 IMAGES, THATS INSANE BRO
+DISREGARD MY EARLIER MESSAGE ON 200 KB, ITS NOW 4 MB BUT CONSIDERING 2 FULL SONGS AND 5 IMAGES, THATS INSANE BRO
 
 Because of the songs, I decided to make this a full on The Quintessential Quintuplets effects so bear with me, I'm planning to add shi like lyrics, transitions, pose confidence, complete with moving background or smth like that IDK OLDER ME WILL DECIDE BUT I PROMISE ITLL BE PEAK
 
