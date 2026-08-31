@@ -26,5 +26,15 @@ CURRENT BUILD: ALPHA 0.4.2
 
 Will become stable build once I fix the thresholds and add Ichika Nakano to the mix
 
+**FEATURES**
+  - When you pose as the character, an image of that sister will pop up.
+  - Debugging is relatively easier cuz I, the goat, added a way to see if you're doing the poses right by simply using the sister's (the sister u wanna pose as) debugger module
+  - If you have multiple cameras, you can choose which camera to use
+  - Automatic module downloader
+  - Independent and modular - meaning ever file (like the images) is within the file itself
+  - Distance normalizer is implemented so the distance stays constant even if you keep moving back and forth for some reason !!
+  - The Quintessential Quintuplets cuz they're a feature yo
+  - Google's Mediapipe to map out your beautiful face!!
+    
 P.S. Press Q to stop the code
 
