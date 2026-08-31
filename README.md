@@ -35,6 +35,8 @@ Will become stable build once I fix the thresholds and add Ichika Nakano to the 
   - Distance normalizer is implemented so the distance stays constant even if you keep moving back and forth for some reason !!
   - The Quintessential Quintuplets cuz they're a feature yo
   - Google's Mediapipe to map out your beautiful face!!
-    
+
+
+ouu shii i regret trying to add music by base64 my clipboard is lagging yo YO
 P.S. Press Q to stop the code
 
