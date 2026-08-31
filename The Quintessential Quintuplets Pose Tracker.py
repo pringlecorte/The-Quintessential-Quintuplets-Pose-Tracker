@@ -4,12 +4,13 @@ import subprocess
 import sys
 import importlib
 import base64
+import keyboard
 
 
 #print(f"{sys.executable}")
 
-if sys.version_info.major != 3 or sys.version_info.minor != 12:
-    print(f"Sorry lil bro, your Python version {sys.version_info.major}.{sys.version_info.minor} cannot support the needed modules. Please install Python 3.12 until I patch for the current Python version you are using. Might as well say goodbye to The Quintessential Quintuplets 💔💔")
+if sys.version_info.major != 3 or not(9 <=sys.version_info.minor <= 12):
+    print(f"Sorry lil bro, your Python version {sys.version_info.major}.{sys.version_info.minor} cannot support the needed modules. Please install Python 3.9 or 3.10 or 3.11 or 3.12 until I patch for the current Python version you are using. Might as well say goodbye to The Quintessential Quintuplets 💔💔")
     sys.exit(1)
 
 
@@ -239,10 +240,7 @@ while camera.isOpened():
                 chin = face_landmarks.landmark[152]
 
                 
-                #print(f"{cheek_left.x - cheek_right.x} {cheek_right.x:.2f}  {mouth_down.y:.2f}")
-                #print(f"Upper Lip{mouth_top.x:.2f} {mouth_top.y:.2f} Lower Lip {mouth_down.x:.2f} {mouth_down.y:.2f}")
-                #print(f"Right Corner {mouth_right.x:.2f} {mouth_right.y:.2f} Left Corner {mouth_left.x:.2f} {mouth_left.y:.2f}")
-                #print()
+
                 index = hand_landmarks.landmark[8]
                 middle = hand_landmarks.landmark[12]
                 thumb = hand_landmarks.landmark[4]
@@ -273,16 +271,42 @@ while camera.isOpened():
                 #print(f"{angle_finger(ring, ring_mid)}")
                 #print(f"{distance(mouth_top, mouth_down, forehead, chin)}")
 
-                print(f"{angle_finger(forehead, chin)}")
-                print(f"{distance(index, lowerright_jaw, forehead, chin)}")
-                print(f"{angle_finger(index, wrist)}")
+                #print(f"{angle_finger(forehead, chin)}")
+                #print(f"{distance(index, lowerright_jaw, forehead, chin)}")
+                #print(f"{angle_finger(index, wrist)}")
 
+                #ITSUKI debugging
+                def itsuki_debug():
+                    print(f"Pinky to mouth: {distance(pinky, mouth_down, forehead, mouth_down)}")
+                    print(f"Mouth is {distance(mouth_top, mouth_down, forehead, chin)} wide")
+                    print(f"{angle_finger(ring, ring_mid)}")
+
+                #MIKU debugging
+                def miku_debug():
+                    print(f" Mouth is{distance(mouth_down, mouth_top, forehead, chin)} wide")
+                    print(f"Distance from thumb to index: {distance(thumb, index, index, wrist)}")
+                    print(f"Tilt of index: {angle_finger(index, wrist)}")
+                    print(f"Tilt of ring finger: {angle_finger(ring, ring_mid)}")
             
 
-                #print(f"{angle_finger(index, wrist)}")
-                
+                #Yotsuba Debugging
+                def yotsuba_debug():
+                    print(f"Distance between left and right of mouth: {distance(mouth_left, mouth_right, cheek_left, cheek_right)}")
+                    print(f"Distance between ring and mouth right: {distance(ring, mouth_right, ring, wrist)}")
+                    print(f"Mouth is {distance(mouth_top, mouth_down, ring, wrist)} wide")
+                    print(f"Distance between top right corner of mouth to left cheek: {distance(mouth_top_right, left_y_cheek, ring, wrist)}")
+                    print(f"Tilt of ring finger: {angle_finger(ring, wrist)}")
+
+                #Nino debugging
+                def nino_debug():
+                    
+                    print(f"Tilt of forehead{angle_finger(forehead, chin)}")
+                    print(f"Distance between index and lower right jaw: {distance(index, lowerright_jaw, forehead, chin)}")
+                    print(f"Tilt of index{angle_finger(index, wrist)}")
+
+
                 print()
-                print("I'm detecting...")
+                
                 
 
 
@@ -291,20 +315,21 @@ while camera.isOpened():
                     frame[50:250, 50:250] = itsuki_image
 
 
-                if 0.015 <= distance(mouth_down, mouth_top, forehead, chin) and (0.35 <= distance(thumb, index, index, wrist) <= 0.45) and angle_finger(index, wrist) <= 20 and not(160 <= angle_finger(ring, ring_mid) <= 170) :
+                elif 0.015 <= distance(mouth_down, mouth_top, forehead, chin) and (0.35 <= distance(thumb, index, index, wrist) <= 0.45) and angle_finger(index, wrist) <= 20 and not(160 <= angle_finger(ring, ring_mid) <= 170) :
                     print("MIKU NAKANO")
                     frame[50:250, 50:250] = miku_image
                     
                                 
                 elif (0.35 <= distance(thumb, index, index, wrist) ) and angle_finger(index, wrist) <= 30 and distance(index, mouth_top, wrist, forehead) <= 0.5 and not(160 <= angle_finger(ring, ring_mid) <= 170) and not(3<=angle_finger(forehead,chin)):
-                    print("Trying to do a Miku Pose?")
+                    print("BUDDY IT AIN'T THAT HARD TO DO MIKU'S POSE ITS A FRIGGING SHOCKED FACE")
+                  
 
-                elif distance(ring, mouth_right, ring, wrist) <= 0.3 and 0.05 <= distance(mouth_top, mouth_down, ring, wrist)  and 0.1 <= distance(mouth_top_right, left_y_cheek, ring, wrist) <= 0.5 and 55 <= angle_finger(ring, wrist):
+                elif 0.42 <= distance(mouth_left, mouth_right, cheek_left, cheek_right) and distance(ring, mouth_right, ring, wrist) <= 0.3 and 0.05 <= distance(mouth_top, mouth_down, ring, wrist)  and 0.1 <= distance(mouth_top_right, left_y_cheek, ring, wrist) <= 0.55 and 55 <= angle_finger(ring, wrist):
                     print("YOTSUBA")
                     frame[50:250, 50:250] = yotsuba_image
 
                 elif distance(ring,mouth_right, ring, wrist) <= 0.1 and 50 <= angle_finger(ring, wrist):
-                    print("Trying to do a Yotsuba Pose?")
+                    print("HOW. HOW ARE YOU GENUINELY TWEAKING WITH YOTSUBA'S POSE?? ")
 
                 
                 elif 3 <= angle_finger(forehead, chin) and  distance(index, lowerright_jaw, forehead, chin) <= 1 and 3 <=angle_finger(index, wrist):
@@ -313,7 +338,7 @@ while camera.isOpened():
 
                                     
                 elif 3 <= angle_finger(forehead, chin) :
-                    print("Trying to do a Nino Pose?")
+                    print("okay ye to be fair, nino's is pretty hard 🤷‍♂️")
 
                 
 
@@ -331,7 +356,7 @@ while camera.isOpened():
                 #print(f"{abs(ring.x, 3) - mouth_right.x,3))}")
 
                 #print(f"{abs(index.x, 3) - lowerright_jaw.x, 3))}")
-                print(2*"")
+               
                
     
 
