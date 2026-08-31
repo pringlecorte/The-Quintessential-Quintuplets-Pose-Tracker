@@ -62,6 +62,7 @@ to whoever is reading this just hit the download button dawg it aint that entert
   - FULL BODY MODE -- I JUST FOUND OUT MEDIAPIPE CAN DETECT YOUR WHOLE BODY
   - Seperated folder for the media (like the songs and images) and the actual code
   - Idekkkk
+  - Maybe to avoid copyright issues, you could do a bring your own lunch typa shi, meaning you can drag your own songs into a folder and the file is gonna recognize it
 
 
 As for you guys with potato laptops, don't worry. Imma seperate the core pose tracker and the full package into 2 files
