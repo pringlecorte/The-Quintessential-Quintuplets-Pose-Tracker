@@ -60,6 +60,7 @@ to whoever is reading this just hit the download button dawg it aint that entert
   - A photo editing tool??
   - Filters??
   - FULL BODY MODE -- I JUST FOUND OUT MEDIAPIPE CAN DETECT YOUR WHOLE BODY
+  - Seperated folder for the media (like the songs and images) and the actual code
   - Idekkkk
 
 
