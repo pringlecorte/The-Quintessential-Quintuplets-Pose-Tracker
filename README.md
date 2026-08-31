@@ -1,4 +1,4 @@
-# A Quintessential Pose Tracker
+<img width="163" height="148" alt="download" src="https://github.com/user-attachments/assets/48547089-6635-46f9-a9aa-f227b7baef99" /># A Quintessential Pose Tracker
 For The Quintessential Quintuplets fans, by The Quintessential Quintuplet fan. This project analyzes your body posture and can state whoever you're posing (based from the picture)
 
 For reference, these are the poses:
@@ -67,4 +67,8 @@ to whoever is reading this just hit the download button dawg it aint that entert
 
 As for you guys with potato laptops, don't worry. Imma seperate the core pose tracker and the full package into 2 files
 P.S. Press Q to stop the code
+
+Me the goat who's about to save yall's laptops by trimming down the huge 4MB python to file to maybe around 60 kb
+<img width="163" height="148" alt="download" src="https://github.com/user-attachments/assets/90d5c777-5d88-4c2e-80ae-29838758de1f" />
+
 
