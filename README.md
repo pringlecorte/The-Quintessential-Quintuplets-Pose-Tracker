@@ -60,6 +60,8 @@ Lowk imma try to learn how to remove the bg so that there will be cool effects l
 
 to whoever is reading this just hit the download button dawg it aint that entertaining to read this 💔💔💔
 
+BRO I SWEAR IF NINO AINT GONNA COMPLY BRO IVE BEEN TWEAKING HER THRESHOLDS AND ITS ALWAYS THE FLIPPING "TRYING TO BE NINO??"
+
 **UPDADTES**
   -ALR I UPDATED NINO'S CUZ SHE KEPT BARGING INTO EVERYONE'S. I TIGHTNENED HER CODE UP
   -FINALLY ADDED ICHIKA. FINNA BE FREE FROM ALPHA
