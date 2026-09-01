@@ -22,6 +22,7 @@ if sys.version_info.major != 3 or not(9 <=sys.version_info.minor <= 12):
     sys.exit(1)
 
 
+
 def pip_install(module, package):
     print(2*"")
     try:
@@ -259,20 +260,31 @@ def angle_finger(p1, p2):
 
     return wrist_angle
 
+newplacex, newplacey = 100,100
 def menu(finger, finger2, frame):
+    global newplacex, newplacey
     text = "Chud??"
-    place = (100, 100)
+    placex, placey = newplacex, newplacey
     font = cv2.FONT_HERSHEY_SCRIPT_SIMPLEX
     base_size = 1
     color = (0, 0, 0)
     thickness = 1
     type = cv2.LINE_AA
-    print(f"index: {round(finger.y,2)}")
-    print(f"angle thumb {angle_finger(finger, finger2)}")
-
+    #print(f"index: {round(finger.y,2)}")
+    #print(f"angle thumb {angle_finger(finger, finger2)}")
+    #print(f"distance {distance(index, thumb, wrist, index)}")
+    print(f"{thumb.x*w}, {thumb.y*h}")
+    print(f"{newplacex}, {newplacey}")
+    if distance(index, thumb, wrist, index) <= 0.2 and ((placex - 40) <= (thumb.x*w) <= (placex + 40)) and ((placey - 40) <= (thumb.y*h) <= (placey + 40)):
+        newplacex = int(thumb.x*w)
+        newplacey = int(thumb.y*h)
+        #test run with miku :33 CUZ MIKU IS THE GOAT
+        frame[placey:placey+mheight, placex:placex+mwidth] = miku_image
+            
     if 0.15 <= round(finger.y,2) <= 0.25:
         text = "Chud ←"
-        base_size = 1.5
+        if base_size <= 5:
+           base_size += 0.01
         color = (20, 20, 20)
 
         if  round(angle_finger(finger, finger2)) <= 50:
@@ -284,9 +296,9 @@ def menu(finger, finger2, frame):
             exthickness = 1
             extype = cv2.LINE_AA
             cv2.putText(frame,extras,explace,exfont,exbase_size,excolor,exthickness,extype)
-            text = ("Chud ←")
-        
-    cv2.putText(frame,text,place,font,base_size,color,thickness,type)
+   
+    
+    cv2.putText(frame,text,(placex, placey),font,base_size,color,thickness,type)
 
 
 def jukebox():
@@ -472,7 +484,9 @@ jukebox()
 mp_selfie = mp.solutions.selfie_segmentation
 selfie = mp_selfie.SelfieSegmentation(model_selection=0)
 
-
+#cv2.namedWindow("The Quintessential Quintuplets Pose Project", cv2.WINDOW_NORMAL)
+#cv2.resizeWindow("The Quintessential Quintuplets Pose Project", 800, 600)
+h, w, c = 0, 0, 0
 while camera.isOpened():
 
     RefreshRate.tick(60)
@@ -480,7 +494,7 @@ while camera.isOpened():
     if not success:
         print("whadahell")
         continue        
-
+    
     frame = cv2.flip(frame, 1)
     chud_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     results = selfie.process(chud_rgb)
@@ -489,11 +503,21 @@ while camera.isOpened():
     bg = np.zeros(frame.shape, dtype=np.uint8) 
     output_frame = np.where(condition, frame, bg)
 
-    main = theposetracker(frame)
-    main.posetracker(frame)
+    chud_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    hand_results = hands.process(chud_rgb)
+    face_results = face.process(chud_rgb)
+
+    if hand_results.multi_hand_landmarks and face_results.multi_face_landmarks:
+        for hand_landmarks in hand_results.multi_hand_landmarks:
+            for face_landmarks in face_results.multi_face_landmarks:  
+                    h, w, c = frame.shape
+                    main = theposetracker(frame)
+                    main.posetracker(frame)
+                    menu(index, pinky, frame)
+                
                
     
-
+    
                 
     cv2.imshow("The Quintessential Quintuplets Pose Project", frame)
     
