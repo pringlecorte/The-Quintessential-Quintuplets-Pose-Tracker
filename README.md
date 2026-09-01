@@ -101,6 +101,11 @@ BRO I SWEAR IF NINO AINT GONNA COMPLY BRO IVE BEEN TWEAKING HER THRESHOLDS AND I
 
 My only concern is the media I'm gonna use. I really want to add in official voice lines but if I were to make that, only I can have it. I can't share it or anything cuz of copyright :/. Believe me guys, if I could I wouldve added actual voice lines for the pose tracker if you got the sister's pose right
 ...maybe me and my friends can do the voice acting
+I KNOW IT MIGHT BE WEIRD SO HERES THE CASE
+  FOR THOSE OF YOU THAT DO WANT IT
+    - I'm planning on using FFMPEG to alter our pitches so that we don't sound like Lebron James subbing for Ayane Sakura. Imma see the real limits of ffmpeg :DD
+  FOR THOSE THAT DON'T WANT IT
+    - Ofc I ain't forcing a feature guys. Also, it might feel weird for you guys to listen to 5 people pretending to be the sisters so it'll be a toggleable feature in general
 
 As for you guys with potato laptops, don't worry. Imma seperate the core pose tracker and the full package into 2 files
 P.S. Press Q to stop the code
