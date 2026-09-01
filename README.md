@@ -98,6 +98,7 @@ BRO I SWEAR IF NINO AINT GONNA COMPLY BRO IVE BEEN TWEAKING HER THRESHOLDS AND I
   - planning on adding AI models on the sisters that lets you talk with them using Ollama's models but the file size... :/
       - Maybe no AI for the base, stripped down version
   - Minigames with the sisters?? Idk bro
+  - Act the sister out. So basically you get a video online and upload it into a folder and then the python file is gonna handle the playback but YOU need to act out each of the characters there and after its done, ffmpeg is gonna stitch the audio recordings to the original video and ye!!
 
 My only concern is the media I'm gonna use. I really want to add in official voice lines but if I were to make that, only I can have it. I can't share it or anything cuz of copyright :/. Believe me guys, if I could I wouldve added actual voice lines for the pose tracker if you got the sister's pose right
 ...maybe me and my friends can do the voice acting
