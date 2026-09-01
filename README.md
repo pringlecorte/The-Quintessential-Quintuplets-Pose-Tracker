@@ -24,7 +24,8 @@ Oh ye, if you guys ever wonder why the hell a python file is 200+ kb with barely
 
 I lowk don't know what to put cuz I wanna make this description longer but I have no idea what to put here. Just download the file lil bro
 
-CURRENT BUILD: ALPHA 0.5.2
+CURRENT BUILD: Beta 1.0.0
+LETS GOOOOO
 
 BOYYYYYYY LETS GOOOOO I MANAGED TO MAKE THE CODE MODULAR FOR THE FUTURE PLANSS. BEFORE THE MAIN LOOP WAS THE POSE TRACKER BUT I RIPPED THE HEART OUT, PERFORMED A LVIE LOBOTOMY ON THE CODE AND STUFFED THE POSE TRACKER INTO A CLASS AND IT WORKS. IT FLIPPING WORKS. THIS EVEN MORE COMPLEX THAN MY RAYCASTER THAT I HAD TO LEARN BY MYSELF (yours truly) BRO . ITS MUCH MORE CLEANER AND MODULAR HAHAHAHAHAHAHAHAHAHA IT WORKS THE SAME AS IT USED TO WORK IN THE MAIN CODE OMG OMG OMG GET THE CAMERA GNG I CAN NOW ADD WHATEVER I WANT WITHOUT THE CODES TANGLING WITH EACH OTHER. HERE WE GOOOOO
 
@@ -36,7 +37,6 @@ I DID THIS IN UNDER AN HOUR BTW (i think)
 
 Lowk the pose tracker part looks more dense than my raycaster logic T-T
 
-Will become stable build once I fix the thresholds and add Ichika Nakano to the mix
 
 **FEATURES**
   - When you pose as the character, an image of that sister will pop up.
