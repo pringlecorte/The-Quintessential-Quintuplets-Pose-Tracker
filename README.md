@@ -94,9 +94,11 @@ When finger IS trying to select, the text bigger
 <img width="442" height="64" alt="Screenshot 2026-09-01 083816" src="https://github.com/user-attachments/assets/6b885bb3-0e8a-4e41-af20-93ba2cb42ce2" />
 
 
-RAHH when I tried adding the selection, I couldn't use emojis but I'm planning on using the pillow module for emojis instead of basic text designs (you can confirm selection by raising your thumb to make it like a gun facing the text)
+RAHH when I tried adding the selection, I couldn't use emojis but I'm planning on using the pillow module for emojis instead of basic text designs 
+I decided to make it easier cuz I was struggling with the gun pose cuz my camera is angled so i decided to make it easier on yall by making it pinky-pie confirmation
 
-<img width="450" height="89" alt="image" src="https://github.com/user-attachments/assets/3889643e-1eb3-4396-9270-701fecd1715b" />
+<img width="502" height="189" alt="image" src="https://github.com/user-attachments/assets/371a84f2-00e5-4bc5-a59b-fff274453bfa" />
+
 
 
 
