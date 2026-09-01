@@ -100,7 +100,7 @@ BRO I SWEAR IF NINO AINT GONNA COMPLY BRO IVE BEEN TWEAKING HER THRESHOLDS AND I
   - Minigames with the sisters?? Idk bro
 
 My only concern is the media I'm gonna use. I really want to add in official voice lines but if I were to make that, only I can have it. I can't share it or anything cuz of copyright :/. Believe me guys, if I could I wouldve added actual voice lines for the pose tracker if you got the sister's pose right
-
+...maybe me and my friends can do the voice acting
 
 As for you guys with potato laptops, don't worry. Imma seperate the core pose tracker and the full package into 2 files
 P.S. Press Q to stop the code
