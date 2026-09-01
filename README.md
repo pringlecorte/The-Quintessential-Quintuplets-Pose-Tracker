@@ -1,4 +1,4 @@
-<img width="163" height="148" alt="download" src="https://github.com/user-attachments/assets/48547089-6635-46f9-a9aa-f227b7baef99" /># A Quintessential Pose Tracker
+A Quintessential Pose Tracker
 For The Quintessential Quintuplets fans, by The Quintessential Quintuplet fan. This project analyzes your body posture and can state whoever you're posing (based from the picture)
 
 For reference, these are the poses:
