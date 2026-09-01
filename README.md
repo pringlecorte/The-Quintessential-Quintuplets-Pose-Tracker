@@ -111,7 +111,7 @@ I KNOW IT MIGHT BE WEIRD SO HERES THE CASE
     - Ofc I ain't forcing a feature guys. Also, it might feel weird for you guys to listen to 5 people pretending to be the sisters so it'll be a toggleable feature in general
     
   -Planning on having each feature as a seperate repo if it make sense like COOKING WITH NINO or the AI or the minigame. You get my point
-
+  -I just learnt about pyautogui...
 
 
 As for you guys with potato laptops, don't worry. Imma seperate the core pose tracker and the full package into 2 files
