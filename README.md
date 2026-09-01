@@ -96,6 +96,10 @@ BRO I SWEAR IF NINO AINT GONNA COMPLY BRO IVE BEEN TWEAKING HER THRESHOLDS AND I
   - I might go ahead and make the menu very very dynamic and csutomizes
   - lowk FFMPEG is the goat so I might use it
   - planning on adding AI models on the sisters that lets you talk with them using Ollama's models but the file size... :/
+      - Maybe no AI for the base, stripped down version
+  - Minigames with the sisters?? Idk bro
+
+My only concern is the media I'm gonna use. I really want to add in official voice lines but if I were to make that, only I can have it. I can't share it or anything cuz of copyright :/. Believe me guys, if I could I wouldve added actual voice lines for the pose tracker if you got the sister's pose right
 
 
 As for you guys with potato laptops, don't worry. Imma seperate the core pose tracker and the full package into 2 files
@@ -137,7 +141,7 @@ LETS GOO I MANAGED TO FIX AND IMPLEMENT JUKEBOX YOU CAN NOW SEARCH FOR THE SONGS
   - Still terminal, keyboard/type based
   - Still haven't implemented or figured out the scrolling thing (imma figure it out trust me)
   - It plays music at least
-It aint exactly musicbee or foobar2000 but it works
+It aint exactly musicbee or foobar2000 or musikcube but it works
 ---------------------------------------
 THE FILE IS FINALLY BACK TO BEING SMALL AND ITS ACTUALLY JUST 17KB NOT 60KB. I MANAGED TO REMOVE THE PICS AND YOU CAN EVEN CUSTOMIZE THE PICS LOL
 
