@@ -99,6 +99,8 @@ I decided to make it easier cuz I was struggling with the gun pose cuz my camera
 
 <img width="502" height="189" alt="image" src="https://github.com/user-attachments/assets/371a84f2-00e5-4bc5-a59b-fff274453bfa" />
 
+LETS GOO I MANAGED TO FIX AND IMPLEMENT JUKEBOX YOU CAN NOW SEARCH FOR THE SONGS YOU DRAGGED INTO THE SONGS FOLDER
+
 
 
 
