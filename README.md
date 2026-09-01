@@ -83,3 +83,13 @@ Me the goat who's about to save yall's laptops by trimming down the huge 4MB pyt
 <img width="163" height="148" alt="download" src="https://github.com/user-attachments/assets/90d5c777-5d88-4c2e-80ae-29838758de1f" />
 
 
+FIRST VERSION OF THE HUD MENU 🤑🤑
+
+When finger is not at the text
+<img width="388" height="96" alt="Screenshot 2026-09-01 083825" src="https://github.com/user-attachments/assets/7b916251-590a-41d7-9470-9177f7e919ca" />
+
+When finger IS trying to select
+<img width="442" height="64" alt="Screenshot 2026-09-01 083816" src="https://github.com/user-attachments/assets/6b885bb3-0e8a-4e41-af20-93ba2cb42ce2" />
+
+
+
