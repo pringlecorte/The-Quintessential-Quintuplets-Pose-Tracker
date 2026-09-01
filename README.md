@@ -14,6 +14,8 @@ This was created via python, Google's MediaPipe framework to track movements, Op
 
 Currently not yet finished. I am planning on finishing Ichika's soon when I have time
 
+Im lowk doing Ichika's rn so ignore what young me said. i just gotta figure out the wrist angle, the thumb to thumb base joint to index angle, the face to neck angle, the gap between the lips, distance, between index and middle fingers, angle of index-index base joint, and middle finger oh and finger to mouth distance and thumb to index distance
+
 For newcomers on GitHub, welcome aboard. To download the file, just hover on top of the screen and you'll see smth like README.md and a file with a ridiculously long name ending with .py. Install that and you should be good to go.
 
 By default, the file automatically downloads the dependencies and modules it needs. If it fails to do so, just follow the instructions it prints. (A major problem is when you try to install mediapipe but something is blocking Python from using subprocess to install the module. If that happens, follow the instruction it prints
@@ -122,7 +124,7 @@ LETS GOO I MANAGED TO FIX AND IMPLEMENT JUKEBOX YOU CAN NOW SEARCH FOR THE SONGS
   - Still terminal, keyboard/type based
   - Still haven't implemented or figured out the scrolling thing (imma figure it out trust me)
   - It plays music at least
-
+It aint exactly musicbee or foobar2000 but it works
 ---------------------------------------
 THE FILE IS FINALLY BACK TO BEING SMALL AND ITS ACTUALLY JUST 17KB NOT 60KB. I MANAGED TO REMOVE THE PICS AND YOU CAN EVEN CUSTOMIZE THE PICS LOL
 
