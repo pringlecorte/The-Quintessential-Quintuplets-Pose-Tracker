@@ -113,6 +113,7 @@ LETS GOO I MANAGED TO FIX AND IMPLEMENT JUKEBOX YOU CAN NOW SEARCH FOR THE SONGS
   imma be realstic
   - Still terminal, keyboard/type based
   - Still haven't implemented or figured out the scrolling thing (imma figure it out trust me)
+  - It plays music at least
 
 
 
