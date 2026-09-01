@@ -99,7 +99,20 @@ I decided to make it easier cuz I was struggling with the gun pose cuz my camera
 
 <img width="502" height="189" alt="image" src="https://github.com/user-attachments/assets/371a84f2-00e5-4bc5-a59b-fff274453bfa" />
 
+
+---------------------------------------
 LETS GOO I MANAGED TO FIX AND IMPLEMENT JUKEBOX YOU CAN NOW SEARCH FOR THE SONGS YOU DRAGGED INTO THE SONGS FOLDER
+
+**My main goals for jukebox**
+  - To be able to list the songs (basic)
+  - To be able to play whatever song you put into the folder
+  - To scroll through the list via finger movement (muscle memory for those of you chuds who doomscroll all day)
+  - Select the song based on the finger sign (a high five for the itsuki'th song on the list
+
+**currently...**
+  imma be realstic
+  - Still terminal, keyboard/type based
+  - Still haven't implemented or figured out the scrolling thing (imma figure it out trust me)
 
 
 
