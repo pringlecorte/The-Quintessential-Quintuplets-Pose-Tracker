@@ -491,7 +491,6 @@ while camera.isOpened():
 
     main = theposetracker(frame)
     main.posetracker(frame)
-    main.ichika_debug()
                
     
 
