@@ -34,6 +34,8 @@ GENUINELY THO I WAS SOO LAZY AND CLOSE TO QUITTING YAYAYAYAYAYA BUT THEN LIKE I 
 
 I DID THIS IN UNDER AN HOUR BTW (i think)
 
+Lowk the pose tracker part looks more dense than my raycaster logic T-T
+
 Will become stable build once I fix the thresholds and add Ichika Nakano to the mix
 
 **FEATURES**
@@ -49,6 +51,8 @@ Will become stable build once I fix the thresholds and add Ichika Nakano to the 
 YOO SO I MANAGED TO ADD DAY 1 BY RED VELVET AND GOTOUBUN NO KIMOCHI WITHOUT IT SOUNDING LIKE DOGWATER JUST SWITCH THE VARIABLES AND YOU SHOULD BE GOOD 
 
 DISREGARD MY EARLIER MESSAGE ON 200 KB, ITS NOW 4 MB BUT CONSIDERING 2 FULL SONGS AND 5 IMAGES, THATS INSANE BRO
+
+Haha jokes on you two, its only around 17 kb now you noobs
 
 Because of the songs, I decided to make this a full on The Quintessential Quintuplets effects so bear with me, I'm planning to add shi like lyrics, transitions, pose confidence, complete with moving background or smth like that IDK OLDER ME WILL DECIDE BUT I PROMISE ITLL BE PEAK
 
