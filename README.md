@@ -60,6 +60,10 @@ Lowk imma try to learn how to remove the bg so that there will be cool effects l
 
 to whoever is reading this just hit the download button dawg it aint that entertaining to read this 💔💔💔
 
+**UPDADTES**
+  -ALR I UPDATED NINO'S CUZ SHE KEPT BARGING INTO EVERYONE'S. I TIGHTNENED HER CODE UP
+  -FINALLY ADDED ICHIKA. FINNA BE FREE FROM ALPHA
+
 **FUTURE PLANS**
   - Photoshoot session
   - More characters
