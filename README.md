@@ -115,6 +115,13 @@ LETS GOO I MANAGED TO FIX AND IMPLEMENT JUKEBOX YOU CAN NOW SEARCH FOR THE SONGS
   - Still haven't implemented or figured out the scrolling thing (imma figure it out trust me)
   - It plays music at least
 
+---------------------------------------
+THE FILE IS FINALLY BACK TO BEING SMALL AND ITS ACTUALLY JUST 17KB NOT 60KB. I MANAGED TO REMOVE THE PICS AND YOU CAN EVEN CUSTOMIZE THE PICS LOL
+
+<img width="634" height="214" alt="image" src="https://github.com/user-attachments/assets/787b123c-4c56-47e9-acf1-df09d76e2544" />
+
+
+JUST CHANGE THE PIC OF THE SISTER YOU WANT TO REPLACE BUT MAKE SURE ITS .jpg FORMAT AND SAME FILE NAME OR YOU GONNA BREAK THE DIRECTORIES
 
 
 
