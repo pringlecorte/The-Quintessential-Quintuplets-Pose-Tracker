@@ -82,10 +82,7 @@ Me the goat who's about to save yall's laptops by trimming down the huge 4MB pyt
 
 <img width="163" height="148" alt="download" src="https://github.com/user-attachments/assets/90d5c777-5d88-4c2e-80ae-29838758de1f" />
 
-
-
-
-
+---------------------------------------
 **FIRST VERSION OF THE HUD MENU 🤑🤑**
 When finger is not at the text
 
