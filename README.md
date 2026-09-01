@@ -75,12 +75,12 @@ BRO I SWEAR IF NINO AINT GONNA COMPLY BRO IVE BEEN TWEAKING HER THRESHOLDS AND I
   - Jukebox??
   - Maybe an actual .exe file??
   - LYRICS to the songs
-  - Changeable songs
+  - ~~Changeable songs~~
   - transitions
   - A photo editing tool??
   - Filters??
   - FULL BODY MODE -- I JUST FOUND OUT MEDIAPIPE CAN DETECT YOUR WHOLE BODY
-  - Seperated folder for the media (like the songs and images) and the actual code
+  - ~~Seperated folder for the media (like the songs and images) and the actual code~~
   - Idekkkk
   - Maybe to avoid copyright issues, you could do a bring your own lunch typa shi, meaning you can drag your own songs into a folder and the file is gonna recognize it
 
@@ -93,6 +93,9 @@ BRO I SWEAR IF NINO AINT GONNA COMPLY BRO IVE BEEN TWEAKING HER THRESHOLDS AND I
       - a clock cuz clocks are cool and important
       - a game maybe pseudo 3d but idk how it would exactly match the content of the pose tracker
   - Lowk imma try to add a stroll in the park with ur favorite nakano sister in 3d but idk about the models of the sisters, don't expect me to go full wizard and if i were u just expect a huge image of miku staring at your soul as you larp about knowing sengoku period history while u walk T-T
+  - I might go ahead and make the menu very very dynamic and csutomizes
+  - lowk FFMPEG is the goat so I might use it
+  - planning on adding AI models on the sisters that lets you talk with them using Ollama's models but the file size... :/
 
 
 As for you guys with potato laptops, don't worry. Imma seperate the core pose tracker and the full package into 2 files
