@@ -84,6 +84,7 @@ Me the goat who's about to save yall's laptops by trimming down the huge 4MB pyt
 
 ---------------------------------------
 **FIRST VERSION OF THE HUD MENU 🤑🤑**
+
 When finger is not at the text it's just there
 
 <img width="388" height="96" alt="Screenshot 2026-09-01 083825" src="https://github.com/user-attachments/assets/7b916251-590a-41d7-9470-9177f7e919ca" />
@@ -91,6 +92,11 @@ When finger is not at the text it's just there
 When finger IS trying to select, the text bigger
 
 <img width="442" height="64" alt="Screenshot 2026-09-01 083816" src="https://github.com/user-attachments/assets/6b885bb3-0e8a-4e41-af20-93ba2cb42ce2" />
+
+
+RAHH when I tried adding the selection, I couldn't use emojis but I'm planning on using the pillow module for emojis instead of basic text designs (you can confirm selection by raising your thumb to make it like a gun facing the text)
+
+<img width="450" height="89" alt="image" src="https://github.com/user-attachments/assets/3889643e-1eb3-4396-9270-701fecd1715b" />
 
 
 
