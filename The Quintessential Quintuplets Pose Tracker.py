@@ -8,7 +8,7 @@ import base64
 import keyboard
 import pyautogui
 pyautogui.PAUSE = 0 
-#ALPHA 0.5.2
+#BETA 1.0.2 MB GUYS I FORGOT TO UPDATE THIS PART, I'VE BEEN AT BETA 1.0.0 SINCE SEPTEMBER 1
 #DONT MIND THE CAMERA SETTINGS AND SHI I AINT DONE YET WITH THAT I KNOW THEYRE A BROKEN LOOP AND I FOCUSED ON THE REAL DEAL FIRST
 
 #print(f"{sys.executable}")
@@ -84,8 +84,10 @@ import io
 from pydub import AudioSegment
 from pydub.playback import play
 
+#For the out of place mouse thingy
 frame_count = 0
 even_coord = odd_coord = 0
+scroll_state = "Wsg"
 
 def listcameras(max = 10):
     available = []
@@ -305,21 +307,30 @@ def menu(finger, finger2, frame):
     cv2.putText(frame,text,(placex, placey),font,base_size,color,thickness,type)
 
 def unrelated_mouse():
-    global frame_count, even_coord, odd_coord
+    global frame_count, even_coord, odd_coord, scroll_state
     pyautogui.moveTo(int(index.x*1920), int(index.y*1080))
 
     frame_count += 1
 
     if frame_count % 2 == 0:
-        even_coord = int(index.y * 1080)
+        even_coord = int(index.y * h)
     elif frame_count % 2 == 1 :
-        odd_coord = int(index.y * 1080) 
+        odd_coord = int(index.y * h) 
+    initial_y = index.y*h
 
-    if abs(odd_coord - even_coord) >= 50:
-        print("scrolling") 
-        pyautogui.scroll(int(abs(odd_coord-even_coord)*-1))
+    print(f"{even_coord} {odd_coord} {abs(0 - index.y*h)} {abs(h - index.y*h)}")
 
-    print(f"{even_coord} {odd_coord} {frame_count}")
+    if abs(odd_coord - even_coord) >= 10 :
+        if ((int(index.y*h) > even_coord) or (int(index.y*h) > odd_coord)):
+            pyautogui.scroll(int(2*abs(odd_coord - even_coord)))
+        
+        elif ((int(index.y*h) < even_coord) or (int(index.y*h) < odd_coord)):
+            pyautogui.scroll(int(-2* abs((odd_coord - even_coord))))
+    
+##DAM U BRO IT TOOK ME A LONG TIME TO FIX THIS
+
+
+
 
     if distance(index, thumb, wrist, index) <= 0.2:
         pyautogui.click()
