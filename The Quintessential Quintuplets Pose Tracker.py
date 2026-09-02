@@ -6,7 +6,8 @@ import sys
 import importlib
 import base64
 import keyboard
-
+import pyautogui
+pyautogui.PAUSE = 0 
 #ALPHA 0.5.2
 #DONT MIND THE CAMERA SETTINGS AND SHI I AINT DONE YET WITH THAT I KNOW THEYRE A BROKEN LOOP AND I FOCUSED ON THE REAL DEAL FIRST
 
@@ -83,6 +84,8 @@ import io
 from pydub import AudioSegment
 from pydub.playback import play
 
+frame_count = 0
+even_coord = odd_coord = 0
 
 def listcameras(max = 10):
     available = []
@@ -261,6 +264,7 @@ def angle_finger(p1, p2):
     return wrist_angle
 
 newplacex, newplacey = 100,100
+
 def menu(finger, finger2, frame):
     global newplacex, newplacey
     text = "Chud??"
@@ -279,8 +283,8 @@ def menu(finger, finger2, frame):
         newplacex = int(thumb.x*w)
         newplacey = int(thumb.y*h)
         #test run with miku :33 CUZ MIKU IS THE GOAT
-        frame[placey:placey+mheight, placex:placex+mwidth] = miku_image
-            
+        #frame[placey:placey+mheight, placex:placex+mwidth] = miku_image
+        
     if 0.15 <= round(finger.y,2) <= 0.25:
         text = "Chud ←"
         if base_size <= 5:
@@ -299,6 +303,26 @@ def menu(finger, finger2, frame):
    
     
     cv2.putText(frame,text,(placex, placey),font,base_size,color,thickness,type)
+
+def unrelated_mouse():
+    global frame_count, even_coord, odd_coord
+    pyautogui.moveTo(int(index.x*1920), int(index.y*1080))
+
+    frame_count += 1
+
+    if frame_count % 2 == 0:
+        even_coord = int(index.y * 1080)
+    elif frame_count % 2 == 1 :
+        odd_coord = int(index.y * 1080) 
+
+    if abs(odd_coord - even_coord) >= 50:
+        print("scrolling") 
+        pyautogui.scroll(int(abs(odd_coord-even_coord)*-1))
+
+    print(f"{even_coord} {odd_coord} {frame_count}")
+
+    if distance(index, thumb, wrist, index) <= 0.2:
+        pyautogui.click()
 
 
 def jukebox():
@@ -511,9 +535,13 @@ while camera.isOpened():
         for hand_landmarks in hand_results.multi_hand_landmarks:
             for face_landmarks in face_results.multi_face_landmarks:  
                     h, w, c = frame.shape
+                    
                     main = theposetracker(frame)
-                    main.posetracker(frame)
-                    menu(index, pinky, frame)
+                    #main.posetracker(frame)
+
+
+                    #menu(index, pinky, frame)
+                    unrelated_mouse()
                 
                
     
