@@ -60,7 +60,7 @@ Lowk imma try to learn how to remove the bg so that there will be cool effects l
 
 to whoever is reading this just hit the download button dawg it aint that entertaining to read this 💔💔💔
 
-BRO I SWEAR IF NINO AINT GONNA COMPLY BRO IVE BEEN TWEAKING HER THRESHOLDS AND ITS ALWAYS THE FLIPPING "TRYING TO BE NINO??"
+  - I SWEAR IF THE DAM SCROLLING LOGIC DOESN'T WORK
 
 **UPDADTES**
   -ALR I UPDATED NINO'S CUZ SHE KEPT BARGING INTO EVERYONE'S. I TIGHTNENED HER CODE UP
@@ -155,6 +155,7 @@ LETS GOO I MANAGED TO FIX AND IMPLEMENT JUKEBOX YOU CAN NOW SEARCH FOR THE SONGS
   - Still terminal, keyboard/type based
   - Still haven't implemented or figured out the scrolling thing (imma figure it out trust me)
   - It plays music at least
+
 It aint exactly musicbee or foobar2000 or musikcube but it works
 ---------------------------------------
 THE FILE IS FINALLY BACK TO BEING SMALL AND ITS ACTUALLY JUST 17KB NOT 60KB. I MANAGED TO REMOVE THE PICS AND YOU CAN EVEN CUSTOMIZE THE PICS LOL
